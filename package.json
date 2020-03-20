@@ -1,0 +1,37 @@
+{
+  "name": "3rd-party-server-example",
+  "version": "1.0.0",
+  "description": "A simple NodeJS express application that can be used by 3rd parties as a starting point to receive TWS messages",
+  "main": "index.js",
+  "scripts": {
+    "test:lint": "eslint --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -w src/ --exec babel-node -- ./src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AquaCheckTeam/3rd-party-server-example.git"
+  },
+  "author": "Ben Nortier <ben@bjnortier.com>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/AquaCheckTeam/3rd-party-server-example/issues"
+  },
+  "homepage": "https://github.com/AquaCheckTeam/3rd-party-server-example#readme",
+  "dependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "body-parser": "^1.19.0",
+    "eslint": "^6.8.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.20.1",
+    "eslint-plugin-node": "^11.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2",
+    "yup": "^0.28.3"
+  }
+}
