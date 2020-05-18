@@ -1,55 +1,85 @@
 {
-    "serialNumber": 1123,
-    "deviceType": "G52",
-    "timestamp": "2020-03-20T09:00:35.332Z",
+  "version": "2.0",
+  "device": {
+    "type": "G52",
+    "id": "1123",
+    "timestamp": "2020-03-20T09:00:00.000Z",
     "productCode": "17.1",
     "firmwareVersion": "1.56",
     "imei": "353242150430544",
     "iccid": "89021779661014502850",
-    "techData": [
-        {
-            "timestamp": "2020-03-20T09:00:08.000Z",
-            "sequenceNumber": 46,
-            "gps": {
-                "timestamp": "2020-03-19T22:40:35.000Z",
-                "latitude": -20.0001,
-                "longitude": 35.0002,
-                "altitude": 12,
-                "groundSpeed2D": 0,
-                "speedAccuracy": 0.2,
-                "heading2D": 0,
-                "pdop": 1.8,
-                "positionAccuracy": 4,
-                "flags": 3
-            },
-            "gsmSignalStrength": 14,
-            "internalTemperature": 3512,
-            "internalBatteryVoltage": 4073,
-            "externalVoltage": 30,
-            "solarCellVoltage": 4662
+    "data": [
+      {
+        "timestamp": "2020-03-20T09:00:00.000Z",
+        "sequenceNumber": 46,
+        "gsmSignalStrength": 14,
+        "internalTemperature": 3512,
+        "internalBatteryVoltage": 4073,
+        "externalVoltage": 30,
+        "solarCellVoltage": 4662,
+        "gps": {
+          "timestamp": "2020-03-20T08:00:00.000Z",
+          "latitude": -20.0001,
+          "longitude": 35.0002,
+          "altitude": 12,
+          "groundSpeed2D": 0,
+          "speedAccuracy": 0.2,
+          "heading2D": 0,
+          "pdop": 1.8,
+          "positionAccuracy": 4,
+          "flags": 3
         }
-    ],
-    "probeData": [
-        {
-            "timestamp": "2020-03-20T06:00:09.000Z",
-            "sequenceNumber": 47,
-            "probeId": 53503,
-            "moistures": [
-                10.64,
-                105.212,
-                106.525,
-                107.24,
-                106.903,
-                106.009
-            ],
-            "temperatures": [
-                43.562,
-                35.562,
-                33.125,
-                32.875,
-                32.875,
-                32.812
-            ]
-        }
+      }
     ]
+  },
+  "probeData": [
+    {
+      "timestamp": "2020-03-20T06:00:00.000Z",
+      "sequenceNumber": 47,
+      "probeId": "53503",
+      "moistures": [
+        101.64,
+        105.212,
+        106.525,
+        107.24,
+        106.903,
+        106.009
+      ],
+      "temperatures": [
+        43.562,
+        35.562,
+        33.125,
+        32.875,
+        32.875,
+        32.812
+      ],
+      "aux": [
+        [0.5, 0.3, null, 0.2],
+        [2.3, 1.5, 4.7]
+      ],
+      "analog": [null, 2045],
+      "counter": [null, 7]
+    },
+    {
+      "timestamp": "2020-03-20T06:30:00.000Z",
+      "sequenceNumber": 48,
+      "probeId": "53503",
+      "moistures": [
+        91.64,
+        95.212,
+        96.525,
+        97.24,
+        96.903,
+        96.009
+      ],
+      "temperatures": [
+        44.562,
+        32.562,
+        31.125,
+        30.875,
+        30.875,
+        30.812
+      ]
+    }
+  ]
 }

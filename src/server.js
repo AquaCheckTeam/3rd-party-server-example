@@ -1,14 +1,14 @@
 import express from 'express'
 import bodyParser from 'body-parser'
 
-import { validateTWSDeviceMessage } from './tws-schemas'
+import { validate } from './twsMessageSchema2.0'
 
 const port = 3011
 const app = express()
 app.use(bodyParser.json())
 
 app.post('/', (req, res) => {
-  const validationError = validateTWSDeviceMessage(req.body)
+  const validationError = validate(req.body)
   if (validationError) {
     res.status(400).json(validationError)
   } else {
